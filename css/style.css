@@ -322,7 +322,18 @@ div.brand {
 }
 
 div.skills {
-  background-color: #7E8691;
+  background-color: hsla(215, 8%, 53%, .5);
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: center;
+  
+}
+
+img.skill-logo {
+   max-height: 120px;
+   max-width: 300px;
+   margin: 5.4em;
 }
 
 div.projects {
