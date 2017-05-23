@@ -184,7 +184,7 @@ button {
   top: -5%;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -.3%;
   margin: auto;
   width: 100px;
   height: 100px;
@@ -321,9 +321,11 @@ div.brand {
   margin-top: 10%;
 }
 
+/*skills section*/
+
 div.skills {
   background-color: hsla(215, 8%, 53%, .5);
-  display: flex;
+  /*display: flex;*/
   flex-flow: row wrap;
   align-content: space-around;
   justify-content: center;
@@ -331,14 +333,131 @@ div.skills {
 }
 
 img.skill-logo {
-   max-height: 120px;
-   max-width: 300px;
-   margin: 5.4em;
+   max-height: 5%;
+   max-width: 10%;
+   margin: 2em;
+   margin-left: 7.3em;
+   padding-left: 1%;
 }
+
+/*Projects section------------------------------------------*/
 
 div.projects {
   background-color: #00B4FF;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: center;
+  /*padding-top: 30%;*/
 }
+
+img.project {
+    max-height: 73%;
+    max-width: 85%;
+    margin: 2%;
+    /*margin-top: 26%;*/
+    border-radius: 10px;
+    border: 5px solid #FFFFFF;
+    padding: 1%;
+}
+div.tooltip {
+    max-height: 40%;
+    max-width: 40%;
+     margin: 2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+div.tooltip .tooltiptextone {
+    visibility:hidden;
+    width: 25%;
+    bottom:55%;
+    left:16%;
+    margin-left: -60px; 
+    background-color: #464B56;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 5;
+}
+
+div.tooltip .tooltiptexttwo {
+    visibility:hidden;
+    width: 25%;
+    bottom:47%;
+    left:62%;
+    margin-left: -60px; 
+    background-color: #464B56;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 5;
+}
+
+div.tooltip .tooltiptextthree {
+    visibility:hidden;
+    width: 25%;
+    bottom:20%;
+    left:40%;
+    margin-left: -60px; 
+    background-color: #464B56;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 5;
+}
+
+div.tooltip:hover .tooltiptextone, div.tooltip:hover .tooltiptexttwo, div.tooltip:hover .tooltiptextthree {
+    visibility: visible;
+}
+
+div.tooltip .tooltiptextone::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 5;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #464B56 transparent transparent transparent;
+}
+
+div.tooltip .tooltiptexttwo::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    /*z-index: 5;*/
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #464B56 transparent;
+}
+
+div.tooltip .tooltiptextthree::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 5;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #464B56 transparent transparent transparent;
+}
+
+a {
+    text-decoration: none;
+    color:#00B4FF;
+    font-size: 20px;
+}
+
 div.interests {
   background-color: #7E8691;
 }
