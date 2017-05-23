@@ -219,24 +219,6 @@ p.letter-one {
     font-size: 150px;
     margin-top: 40%;
 }
-/*
-.show main {
-  opacity: 0;
-  -webkit-transition: opacity 0s 0.61s ease-out, -webkit-transform 0.6s ease-in-out;
-  transition: opacity 0s 0.61s ease-out, -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, opacity 0s 0.61s ease-out;
-  transition: transform 0.6s ease-in-out, opacity 0s 0.61s ease-out, -webkit-transform 0.6s ease-in-out;
-   -webkit-transform: translate3d(-50%, -110%, 0);
-          transform: translate3d(-50%, -110%, 0);
-}*/
-/*.open .panel.left {
-  -webkit-transform: translate3d(-100%, 0, 0);
-          transform: translate3d(-100%, 0, 0);
-}
-.open .panel.right {
-  -webkit-transform: translate3d(100%, 0, 0);
-          transform: translate3d(100%, 0, 0);
-}*/
 
 /*For the rest of the app---------------------------------------------*/
 
@@ -265,7 +247,21 @@ nav {
 }
 
 p.choice {
-  margin: 3% 10% 3% 4%;
+  margin: 0;
+  padding: 3% 9% 3% 4%;
+  font-family: 'Comfortaa', cursive;
+ 
+   -webkit-transition: font-size .2s 0.21s ease-out, -webkit-transform 0.2s ease-in-out;
+  transition: font-size .2s 0.21s ease-out, -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, font-size .2s 0.21s ease-out;
+  transition: transform 0.2s ease-in-out, font-size .2s 0.21s ease-out, -webkit-transform 0.2s ease-in-out;
+
+}
+p.choice:hover {
+    cursor: pointer;
+    background-color: #00B4FF;
+    font-size: 20px;
+
 }
 
 /*About Section --------------------------------------------------*/
@@ -357,7 +353,7 @@ img.project {
     margin: 2%;
     /*margin-top: 26%;*/
     border-radius: 10px;
-    border: 5px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
     padding: 1%;
 }
 div.tooltip {
@@ -488,7 +484,7 @@ div.contacts {
 }
 div.contact-one, div.contact-two, div.contact-three, div.contact-four {
      max-height: 40%;
-   max-width: 38%;
+   max-width: 32%;
    margin: 4.5%;
    margin-top: 10%;
    padding-left: 2%;
@@ -496,7 +492,8 @@ div.contact-one, div.contact-two, div.contact-three, div.contact-four {
 
 .gmail, .github, .linkedin, .twitter {
     height: 60%;
-    width: 55%;
+    width: 47%;
+    margin-left: 4%;
     /*margin: 10%;*/
 }
 
@@ -506,13 +503,6 @@ div.resume {
 
 }
 #splash {
-/*padding: 40px;
-position: relative;
-background: #FFF;
-margin: 20px 0 0 0;
-height: 300px;
-width: 1100px;
-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);*/
 height: 100%;
 width: 100%;
 }
@@ -527,7 +517,6 @@ padding-bottom: 2%;
 }
 
 embed {
-/*margin-bottom: 1.75em;*/
 margin-left: auto;
 margin-right: auto;
 height: 100%;    
