@@ -238,7 +238,7 @@ p.letter-one {
           transform: translate3d(100%, 0, 0);
 }*/
 
-/*For the rest of the app*/
+/*For the rest of the app---------------------------------------------*/
 
 .option {
   opacity: 1;
@@ -253,7 +253,7 @@ div.option {
 div.one {
   z-index: 2;
 }
-/*Nav bar*/
+/*Nav bar---------------------------------------------------------*/
 nav {
   width: 100%;
   margin: 0;
@@ -268,7 +268,7 @@ p.choice {
   margin: 3% 10% 3% 4%;
 }
 
-/*About Section */
+/*About Section --------------------------------------------------*/
 
 div.about {
   background-color: #00B4FF;
@@ -321,7 +321,7 @@ div.brand {
   margin-top: 10%;
 }
 
-/*skills section*/
+/*skills section-------------------------------------------*/
 
 div.skills {
   background-color: hsla(215, 8%, 53%, .5);
@@ -458,14 +458,77 @@ a {
     font-size: 20px;
 }
 
+/*Interests section --------------------------------------------*/
 div.interests {
   background-color: #7E8691;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+div.interest-image {
+    max-height: 100%;
 }
 
+div.interests-text {
+    height: 100%;
+    padding: 6%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 29px;
+    
+}
+
+/*Contacts section ----------------------------------------------*/
 div.contact {
   background-color: #00B4FF;
 }
+div.contacts {
+    display: flex;
+    flex-flow: row wrap;
+  justify-content: space-between;
+}
+div.contact-one, div.contact-two, div.contact-three, div.contact-four {
+     max-height: 40%;
+   max-width: 38%;
+   margin: 4.5%;
+   margin-top: 10%;
+   padding-left: 2%;
+}
 
+.gmail, .github, .linkedin, .twitter {
+    height: 60%;
+    width: 55%;
+    /*margin: 10%;*/
+}
+
+/*Resume section --------------------------------------------------*/
 div.resume {
-  background-color: #7E8691;
+  background-color: hsl(215, 8%, 53%);
+
+}
+#splash {
+/*padding: 40px;
+position: relative;
+background: #FFF;
+margin: 20px 0 0 0;
+height: 300px;
+width: 1100px;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);*/
+height: 100%;
+width: 100%;
+}
+
+div.post {
+width: 820px;
+height: 100%;
+margin-left: auto ;
+margin-right: auto ;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+
+embed {
+/*margin-bottom: 1.75em;*/
+margin-left: auto;
+margin-right: auto;
+height: 100%;    
 }
