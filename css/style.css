@@ -470,6 +470,11 @@ div.interests-text {
     
 }
 
+a.transalt-link {
+  color: #ff5d22;
+  font-size: 1em;
+}
+
 /*Contacts section ----------------------------------------------*/
 div.contact {
   background-color: #00B4FF;
@@ -519,6 +524,21 @@ margin-right: auto;
 height: 100%;    
 }
 
+/*footer------------------------------------------------------------*/
+
+footer.footer {
+  background-color: #464B56;
+  height: 2em;
+  margin-top: 1.4em;
+  padding-top: .03em;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  color:#FFF9F2;
+}
+
+span.blue-name {
+  color:#00B4FF;
+}
 /*for media queries and responsiveness-----------------------------*/
 
 img {
