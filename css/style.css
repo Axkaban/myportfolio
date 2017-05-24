@@ -85,8 +85,8 @@ color: #00B4FF;
 
 .panel {
   position: fixed;
-  width: 50%;
-  height: 100%;
+  width: 25em;
+  height: 50em;
   background-color: #00B4FF;
   z-index: 6;
   visibility: visible;
@@ -102,10 +102,10 @@ color: #00B4FF;
  font-size: 1.2em;
 }
 .panel.left:before {
-  position: absolute;
-  top: 0;
+  /*position: fixed;*/
+  /*top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0;*/
   margin: auto;
   content: '';
   height: 2em;
@@ -119,14 +119,14 @@ color: #00B4FF;
  font-size: 1.2em;
 }
 .panel.right:before {
-  position: absolute;
-  top: 0;
+  /*position: ;*/
+  /*top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 0;*/
   margin: auto;
   content: '';
   height: 2em;
-  width: 0;
+  /*width: 0;*/
   
 
 }
@@ -163,7 +163,7 @@ color: #00B4FF;
 }
 
 .open .panel {
-  opacity: 0.2;
+  opacity: 0;
   -webkit-transition: opacity 0s 0.61s ease-out, -webkit-transform 0.6s ease-in-out;
   transition: opacity 0s 0.61s ease-out, -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, opacity 0s 0.61s ease-out;
@@ -351,8 +351,8 @@ img.project {
     padding: 1%;
 }
 div.tooltip {
-    max-height: 40%;
-    max-width: 40%;
+    max-height: 30em;
+    max-width: 23em;
      margin: 2em;
     font-family: 'Raleway', sans-serif;
     font-size: .7em !important;
@@ -361,8 +361,8 @@ div.tooltip {
 div.tooltip .tooltiptextone {
     visibility:hidden;
     width: 25%;
-    bottom:55%;
-    left:16%;
+    bottom:45%;
+    left:6%;
     margin-left: -1em; 
     background-color: #464B56;
     color: #FFFFFF;
@@ -373,11 +373,11 @@ div.tooltip .tooltiptextone {
     z-index: 5;
 }
 
-div.tooltip .tooltiptexttwo {
+div.tooltip .tooltiptexttwo{
     visibility:hidden;
     width: 25%;
-    bottom:47%;
-    left:62%;
+    bottom:37%;
+    left:35em;
     margin-left: -60px; 
     background-color: #464B56;
     color: #FFFFFF;
@@ -392,7 +392,7 @@ div.tooltip .tooltiptextthree {
     visibility:hidden;
     width: 25%;
     bottom:20%;
-    left:40%;
+    left:61.5em;
     margin-left: -60px; 
     background-color: #464B56;
     color: #FFFFFF;
@@ -410,13 +410,13 @@ div.tooltip:hover .tooltiptextone, div.tooltip:hover .tooltiptexttwo, div.toolti
 div.tooltip .tooltiptextone::after {
     content: " ";
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 50%;
-    z-index: 5;
+    /*z-index: 5;*/
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #464B56 transparent transparent transparent;
+    border-color: transparent transparent #464B56 transparent;
 }
 
 div.tooltip .tooltiptexttwo::after {
@@ -432,15 +432,15 @@ div.tooltip .tooltiptexttwo::after {
 }
 
 div.tooltip .tooltiptextthree::after {
-    content: " ";
+   content: " ";
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 50%;
-    z-index: 5;
+    /*z-index: 5;*/
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #464B56 transparent transparent transparent;
+    border-color: transparent transparent #464B56 transparent;
 }
 
 a {
@@ -466,7 +466,7 @@ div.interests-text {
     width: 45%;
     padding: 6%;
     font-family: 'Raleway', sans-serif;
-    font-size: 29px;
+    font-size: 1.3em;
     
 }
 
