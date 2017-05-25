@@ -2,6 +2,7 @@ button = document.querySelector("button");
 body = document.querySelector("body")
 
 button.addEventListener('click', ()=>{
+  console.log(document.querySelector('nav').offsetHeight)
    body.classList.toggle('open');
    body.setAttribute('style', 'overflow: scroll;');
    button.setAttribute('style', 'z-index: 0;');
@@ -16,12 +17,12 @@ function toScroll(element, dist) {
   });
 };
 
-toScroll('p.about', document.querySelector('div.about').getBoundingClientRect().top+window.scrollY - 105.38);
-toScroll('p.skills', document.querySelector('div.skills').getBoundingClientRect().top+window.scrollY - 105.38);
-toScroll('p.projects', document.querySelector('div.projects').getBoundingClientRect().top+window.scrollY - 105.38);
-toScroll('p.interests', document.querySelector('div.interests').getBoundingClientRect().top+window.scrollY - 105.38);
+toScroll('p.about', document.querySelector('div.about').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
+toScroll('p.skills', document.querySelector('div.skills').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
+toScroll('p.projects', document.querySelector('div.projects').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
+toScroll('p.interests', document.querySelector('div.interests').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
 toScroll('p.contact', document.querySelector('div.contact').getBoundingClientRect().top+window.scrollY);
-toScroll('p.resume', document.querySelector('div.resume').getBoundingClientRect().top+window.scrollY - 105.38);
+toScroll('p.resume', document.querySelector('div.resume').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
 
 
  
