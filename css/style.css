@@ -35,8 +35,8 @@ h2.title {
   height: 5%;
   font-size:1.3em;
    text-align: center;
-   -webkit-transform: translateY(24px);
-          transform: translateY(24px);
+   -webkit-transform: translateY(1em);
+          transform: translateY(1em);
   -webkit-transition: opacity 0s 1.42s ease-out, -webkit-transform 0s 1.42s ease-out;
   transition: opacity 0s 1.42s ease-out, -webkit-transform 0s 1.42s ease-out;
   transition: transform 0s 1.42s ease-out, opacity 0s 1.42s ease-out;
@@ -54,8 +54,8 @@ h1{
   margin-left: 7%;
   margin-bottom: 0;
   margin-top: 20%;
-  -webkit-transform: translateY(24px);
-          transform: translateY(24px);
+  -webkit-transform: translateY(1em);
+          transform: translateY(1em);
   -webkit-transition: opacity 0s 1.42s ease-out, -webkit-transform 0s 1.42s ease-out;
   transition: opacity 0s 1.42s ease-out, -webkit-transform 0s 1.42s ease-out;
   transition: transform 0s 1.42s ease-out, opacity 0s 1.42s ease-out;
