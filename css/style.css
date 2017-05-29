@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa|Raleway);
 body {
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
   /*padding: 0 24px;*/
   margin: 0;
   color: #FFFFFF;
@@ -237,8 +238,8 @@ p.letter-one {
 
 div.option {
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   z-index: 4;
 }
 div.one {
@@ -246,7 +247,7 @@ div.one {
 }
 /*Nav bar---------------------------------------------------------*/
 nav {
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   position:fixed;
  display: flex;
@@ -515,23 +516,24 @@ div.resume {
 
 }
 #splash {
-height: 100%;
-width: 100%;
+height: 100vh;
+width: 100vw;
 }
 
 div.post {
-width: 820px;
-height: 100%;
-margin-left: auto ;
+width: 100vh;
+height: 100vh;
+/*margin-left: auto ;
 margin-right: auto ;
 padding-top: 2%;
-padding-bottom: 2%;
+padding-bottom: 2%;*/
 }
 
 embed {
-margin-left: auto;
-margin-right: auto;
-height: 100%;    
+/*margin-left: auto;
+margin-right: auto;*/
+height: 100vh;
+width: 100vw;    
 }
 
 /*footer------------------------------------------------------------*/

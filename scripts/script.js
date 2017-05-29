@@ -1,8 +1,8 @@
 button = document.querySelector("button");
-body = document.querySelector("body")
+body = document.querySelector("body");
+panels = document.querySelector("div.panel-container");
 
 button.addEventListener('click', ()=>{
-  console.log(document.querySelector('nav').offsetHeight)
    body.classList.toggle('open');
    body.setAttribute('style', 'overflow: scroll;');
    button.setAttribute('style', 'z-index: 0;');
@@ -23,6 +23,5 @@ toScroll('p.projects', document.querySelector('div.projects').getBoundingClientR
 toScroll('p.interests', document.querySelector('div.interests').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
 toScroll('p.contact', document.querySelector('div.contact').getBoundingClientRect().top+window.scrollY);
 toScroll('p.resume', document.querySelector('div.resume').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
-
 
  
