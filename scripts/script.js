@@ -1,6 +1,7 @@
 button = document.querySelector("button");
 body = document.querySelector("body");
 panels = document.querySelector("div.panel-container");
+// anchor = document.querySelectorAll("a");
 
 button.addEventListener('click', ()=>{
    body.classList.toggle('open');
@@ -10,18 +11,26 @@ button.addEventListener('click', ()=>{
   
 });
 
-// function toScroll(element, dist) {
-//   let el = document.querySelector(element);
-//   return el.addEventListener('click', () => {
-//     window.scroll(0, dist);
-//   });
-// };
+// anchor.addEventListener('click', (e) => {
+//     window.location.hash = ''; // for older browsers, leaves a # behind
+//     history.pushState('', document.title, window.location.pathname); // nice and clean
+//     e.preventDefault(); // no page reload
+   
+// });
 
-// toScroll('p.about', document.querySelector('div.about').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
-// toScroll('p.skills', document.querySelector('div.skills').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
-// toScroll('p.projects', document.querySelector('div.projects').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
-// toScroll('p.interests', document.querySelector('div.interests').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
-// toScroll('p.contact', document.querySelector('div.contact').getBoundingClientRect().top+window.scrollY);
-// toScroll('p.resume', document.querySelector('div.resume').getBoundingClientRect().top+window.scrollY - document.querySelector('nav').offsetHeight + .38);
 
- 
+function toScroll(element, dist) {
+  let el = document.querySelector(element);
+  return el.addEventListener('click', () => {
+    window.location.href = dist;
+    history.pushState('', document.title, window.location.pathname); // nice and clean
+    e.preventDefault(); // no page reload
+  });
+};
+
+ toScroll('a.about', "#about");
+toScroll('a.skills', "#skills");
+toScroll('a.projects', "#projects");
+toScroll('a.interests', "#interests");
+toScroll('a.contact', "#contact");
+toScroll('a.resume', "#resume");
