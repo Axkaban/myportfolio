@@ -193,7 +193,7 @@ button {
   height: 1em;
   color: white;
   background-color: transparent;
-  padding: 0 24px;
+  /*padding: 0 24px;*/
   font-size: 5em;
   border: 0;
   z-index: 6;
@@ -202,6 +202,30 @@ button {
 }
 button:focus {
   outline: none;
+}
+button:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 2rem;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-.01em, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(.03em, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-.06em, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(.09em, 0, 0);
+  }
 }
 
 
@@ -220,7 +244,7 @@ p.letter-two {
 p.letter-one {
   position: absolute;
   float: right;
-    margin-left: 15%;
+    margin-left: 11%;
     font-size: 6em;
     margin-top: 40%;
 }
@@ -256,15 +280,17 @@ nav {
   background-color: #464B56;
 }
 
-p.choice {
+a.choice {
   margin: 0;
-  padding: 3% 9% 3% 4%;
+  padding: 1% 9% 1% 4%;
   font-family: 'Comfortaa', cursive;
  font-size: .7em !important;
 }
-p.choice:hover {
+a.choice:hover {
     cursor: pointer;
     background-color: #00B4FF;
+    color: #464B56;
+    font-weight: bold;
 
 }
 
@@ -279,9 +305,9 @@ div.about {
 .about .text {
   position: relative;
   flex-direction: column;
-  height: 15em;
+  height: 10em;
   width: 20em;
-  margin-top: 1em;
+  margin-top: 4em;
   margin-bottom: 2em;
   background-color: #7E8691;
   box-shadow: hsla(0, 100%, 98%, .8) 0 0 0 4px;
@@ -330,14 +356,15 @@ div.skills {
   flex-flow: row wrap;
   align-content: space-around;
   justify-content: center;
-  
+  padding: 3em 0 3em 0;
 }
+
 
 img.skill-logo {
    max-height: 5%;
    max-width: 10%;
    margin: 2em;
-   margin-left: 7.3em;
+   margin-left: 6.3em;
    padding-left: 1%;
 }
 
@@ -349,7 +376,7 @@ div.projects {
   flex-flow: row wrap;
   align-content: space-around;
   justify-content: center;
-  /*padding-top: 30%;*/
+  padding-top: 2em;
 }
 
 img.project {
@@ -513,7 +540,7 @@ div.contact-one, div.contact-two, div.contact-three, div.contact-four {
 /*Resume section --------------------------------------------------*/
 div.resume {
   background-color: hsl(215, 8%, 53%);
-
+  padding-top: 2em;
 }
 #splash {
 height: 100vh;
