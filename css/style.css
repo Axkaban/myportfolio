@@ -356,6 +356,7 @@ div.about {
   width: auto;
   height: auto;
 }
+/*
 .about .text {
   position: relative;
   flex-direction: column;
@@ -372,15 +373,15 @@ div.about {
   padding-right: 2%;
   padding-top: 20em;
   overflow: scroll;
-}
+}*/
 
 
 div.image {
   /*background-color: #FFF9F2;
   border-radius: 100%;*/
-  max-width: 30%;
+  /*max-width: 30%;*/
 }
-img.profile {
+/*img.profile {
   height: 9em;
   width: 9em;
   opacity: 1;
@@ -388,24 +389,24 @@ img.profile {
   margin-left: 20%;
   border: 5px solid #FFF9F2;
   border-radius: 100%;
-  /*box-shadow: #00B4FF 0 0 0 4px;*/
-}
-div.brand {
-  color: black/*#464B56*/;
+  
+}*/
+/*div.brand {
+  color: black;
   font-size: .8em;
   font-family: 'Comfortaa', cursive;
   font-style: italic;
-  /*background-color: hsla(0, 100%, 98%, .5);*/
+  
   border-radius: 3px;
   font-weight: bolder;
   padding: 1%;
   margin-top: 10%;
-}
+}*/
 
 /*skills section-------------------------------------------*/
 
 div.skills {
-  background-color: hsla(215, 8%, 53%, .5);
+  background-color: hsl(215, 8%, 53%);
   /*display: flex;*/
   flex-flow: row wrap;
   align-content: space-around;
@@ -417,11 +418,13 @@ div.skills {
 div.skills-show {
   margin-left: 3.5em; 
   margin-right: 3.5em;
+  padding-left: 5em;
+ 
 }
 
 img.skill-logo {
-   max-height: 6.5em;
-   max-width: 13em;
+   max-height: 4.5em;
+   max-width: 9em;
    margin: 2.3em;
    /*margin-left: 9em;*/
    padding: 1em;
@@ -568,7 +571,8 @@ div.interests-text {
     width: 45%;
     padding: 6%;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    height: auto;
     
 }
 
@@ -579,28 +583,40 @@ a.transalt-link {
 
 /*Contacts section ----------------------------------------------*/
 div.contact {
-  background-color: #00B4FF;
+  background-color: hsla(215, 8%, 53%, .5);
   /*height: auto;*/
 }
 div.contacts {
     display: flex;
     display: -webkit-flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   justify-content: space-between;
+  align-content: center;
   height: auto;
+  margin-top: 23%;
+  margin-left: 1%;
 }
 div.contact-one, div.contact-two, div.contact-three, div.contact-four {
-     max-height: 40%;
-   max-width: 32%;
-   margin: 4.5%;
-   margin-top: 10%;
-   padding-left: 2%;
+    height: 20%;
+    width: 12%;
+   /*margin: 4.5%;
+   /*margin-top: 10%;*/
+   /*padding-left: 2;*/
 }
 
-.gmail, .github, .linkedin, .twitter {
-    height: 60%;
-    width: 47%;
-    margin-left: 4%;
+.github, .linkedin, .twitter {
+    height: 90%;
+    width: 90%;
+    /*margin-left: 4%;*/
+    /*margin: 10%;*/
+    
+}
+
+.gmail {
+  height: 84%;
+    width: 90%;
+    /*margin-left: 4%;*/
     /*margin: 10%;*/
 }
 
@@ -676,12 +692,6 @@ img {
   }
 }
 
-
-@media (min-width:800px) {
-  p.letter-two {
-    left:-6%;
-  }
-}
 
 @media (min-width:960px) { 
   body {
@@ -784,7 +794,23 @@ img {
   nav:hover{
     opacity:1;
   }*/
+}
+
+@media (min-width:550px) {
+  /*p.letter-two {
+    left:-6%;
+  }*/
+   .dot.left:after, .dot.right:after {
+    width: .3em;
+    height: .3em;
+    
   }
+
+  button {
+    left: 45%;
+  }
+
+}
 
   /*General*/
 
