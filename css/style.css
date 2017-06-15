@@ -189,7 +189,7 @@ color: #00B4FF;
 }
 
 button {
-  cursor: pointer;
+  /*cursor: pointer;*/
   position: fixed;
   top: 42%;
   right: 0;
@@ -210,7 +210,7 @@ button {
 button:focus {
   outline: none;
 }
-button:hover {
+.shake {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -590,7 +590,7 @@ div.contacts {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   justify-content: space-between;
   align-content: center;
   height: auto;
@@ -781,7 +781,15 @@ img {
   }
 
   button {
-    left: 40%;
+    left: 35%;
+  }
+
+  div.about {
+    flex-direction: column;
+  }
+
+   div.skills-show {
+    padding-left: 0;
   }
   
   /*nav {
@@ -808,6 +816,13 @@ img {
 
   button {
     left: 45%;
+  }
+  div.about {
+    flex-direction: row;
+  }
+
+  div.skills-show {
+    padding-left: 5em;
   }
 
 }

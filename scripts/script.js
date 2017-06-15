@@ -2,18 +2,19 @@ button = document.querySelector("button");
 body = document.querySelector("body");
 panels = document.querySelector("div.panel-container");
 
-button.addEventListener('mouseover', (e)=>{
+// button.addEventListener('mouseover', (e)=>{
  setTimeout(function(){
   body.classList.add('open');
    body.setAttribute('style', 'overflow: scroll;');
    button.setAttribute('style', 'z-index: 0;');
+   button.classList.add('shake');
    window.scroll(0,0);
 
    setTimeout(function(){ panels.setAttribute('style', 'visibility:hidden;'), 1000 });
   
-},1100);
+},2100);
    
-});
+// });
 
 
 
