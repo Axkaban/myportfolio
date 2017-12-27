@@ -347,13 +347,13 @@ a.choice:hover {
 
 /*About Section --------------------------------------------------*/
 
-div.about {
+div#about {
   background-color: #00B4FF;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
   justify-content: space-around;
-  width: auto;
+  /* width: auto; */
   height: auto;
 }
 /*
@@ -376,11 +376,11 @@ div.about {
 }*/
 
 
-div.image {
+/* div.image { */
   /*background-color: #FFF9F2;
   border-radius: 100%;*/
   /*max-width: 30%;*/
-}
+/* } */
 /*img.profile {
   height: 9em;
   width: 9em;
@@ -432,36 +432,57 @@ img.skill-logo {
 
 /*Projects section------------------------------------------*/
 
-div.projects {
+div#projects {
   background-color: #00B4FF;
   display: flex;
   display: -webkit-flex;
-  flex-flow: row wrap;
-  align-content: space-around;
-  justify-content: center;
-  padding-top: 2em;
+  flex-flow: column;
+  /* align-content: space-around; */
+  /* justify-content: space-between; */
+  padding-top: .2em;
  
 }
 
 img.project {
-    max-height: 73%;
-    max-width: 85%;
-    margin: 2%;
+    max-height: 100em;
+    width: 100em;
+    /* margin: 2%; */
     /*margin-top: 26%;*/
-    border-radius: 10px;
-    border: 3px solid #FFFFFF;
-    padding: 1%;
-    height: auto;
-}
+    /* border-radius: 10px; */
+    /* border: 3px solid #FFFFFF; */
+    /* padding: 1%; */
+    /* height: auto;  */
+} 
 div.tooltip {
-    max-height: 30em;
-    max-width: 23em;
-     margin: 2em;
+    display: flex;
+    display: -webkit-flex;
+    max-height: 33.3%;
+    width: 100%;
+     /* margin: 2em; */
     font-family: 'Raleway', sans-serif;
     font-size: .7em !important;
+    border-bottom: 5px solid #00B4FF
+}
+/* div.tooltip.one{
+  background-image: url("../media/kook.png");
+
 }
 
-div.tooltip .tooltiptextone {
+div.tooltip.two {
+  background-image: url("../media/trek-ster.png");
+
+
+}
+
+div.tooltip.three {
+  background-image: url("../media/bio-me.png");
+
+
+} */
+
+
+
+/* div.tooltip .tooltiptextone {
     visibility:hidden;
     width: 25%;
     bottom:45%;
@@ -474,24 +495,27 @@ div.tooltip .tooltiptextone {
     border-radius: 6px;
     position: absolute;
     z-index: 5;
-}
+} */
 
-div.tooltip .tooltiptexttwo{
+    div.tooltip .tooltiptextone,
+  div.tooltip .tooltiptexttwo,
+  div.tooltip .tooltiptextthree {
     visibility:hidden;
-    width: 25%;
-    bottom:37%;
-    left:35em;
-    margin-left: -60px; 
-    background-color: #464B56;
+    width: 100%;
+    height: 33.3%;
+    /* bottom:37%;
+    left:35em; */
+    /* margin-left: -60px;  */
+    background-color: rgba(70, 75, 86, .7);
     color: #FFFFFF;
     text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+    /* padding: 5px 0; */
+    /* border-radius: 6px; */
     position: absolute;
     z-index: 5;
 }
 
-div.tooltip .tooltiptextthree {
+/* div.tooltip .tooltiptextthree {
     visibility:hidden;
     width: 25%;
     bottom:20%;
@@ -504,18 +528,17 @@ div.tooltip .tooltiptextthree {
     border-radius: 6px;
     position: absolute;
     z-index: 5;
-}
+} */
 
 div.tooltip:hover .tooltiptextone, div.tooltip:hover .tooltiptexttwo, div.tooltip:hover .tooltiptextthree {
     visibility: visible;
 }
 
-div.tooltip .tooltiptextone::after {
+/* div.tooltip .tooltiptextone::after {
     content: " ";
     position: absolute;
     bottom: 100%;
     left: 50%;
-    /*z-index: 5;*/
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
@@ -527,7 +550,6 @@ div.tooltip .tooltiptexttwo::after {
     position: absolute;
     bottom: 100%;
     left: 50%;
-    /*z-index: 5;*/
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
@@ -539,12 +561,11 @@ div.tooltip .tooltiptextthree::after {
     position: absolute;
     bottom: 100%;
     left: 50%;
-    /*z-index: 5;*/
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent #464B56 transparent;
-}
+} */
 
 a {
     text-decoration: none;
@@ -562,12 +583,15 @@ div.interests {
   height: auto;
 }
 div.interests-image, image.interest-image {
-    max-height: 100%;
+    height: 100%;
     max-width: 100em;
+}
+div.interests-image {
+  display: flex;
+
 }
 
 div.interests-text {
-    /*height: 100%;*/
     width: 45%;
     padding: 6%;
     font-family: 'Raleway', sans-serif;
@@ -587,11 +611,13 @@ div.contact {
   /*height: auto;*/
 }
 div.contacts {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    flex-wrap: wrap !important;
-  justify-content: space-between;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap !important;
+  -ms-flex-flow: row wrap !important;
+
+    /* flex-wrap: wrap !important; */
+  justify-content: space-around;
   align-content: center;
   height: auto;
   margin-top: 23%;
@@ -823,6 +849,11 @@ img {
 
   div.skills-show {
     padding-left: 5em;
+  }
+
+  div.contacts {
+    flex-flow: column wrap;
+    -ms-flex-flow: column wrap
   }
 
 }
